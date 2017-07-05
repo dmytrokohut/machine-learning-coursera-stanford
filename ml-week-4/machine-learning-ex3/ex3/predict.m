@@ -27,7 +27,6 @@ hidden_layer = sigmoid(X_o*Theta1');
 hidden_layer = [ones(m, 1) hidden_layer];
 output_layer = sigmoid(hidden_layer*Theta2');
 
-
 [value, p] = max(output_layer, [], 2);
 
 
